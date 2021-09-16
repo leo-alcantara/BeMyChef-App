@@ -1,12 +1,12 @@
 package the.bug.be_my_chef_system.data;
 
 
-import the.bug.be_my_chef_system.data.model.Events;
+import the.bug.be_my_chef_system.model.Events;
 
 import java.time.LocalDate;
 import java.util.Collection;
 
-public interface EventsDAO extends GenericDAO <Events, Integer> {
+public interface EventsDAO extends GenericDAO <Events, String> {
 
     //Events createEvent (Events event);
 

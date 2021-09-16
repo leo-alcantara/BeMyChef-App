@@ -1,5 +1,5 @@
 package the.bug.be_my_chef_system.data;
-import the.bug.be_my_chef_system.data.model.Events;
+import the.bug.be_my_chef_system.model.Events;
 
 import java.time.LocalDate;
 import java.util.Collection;
@@ -37,7 +37,7 @@ public class EventsCollectionRepository implements EventsDAO {
     }
 
     @Override
-    public boolean delete(Integer integer) {
+    public boolean delete(Events event) {
         return false;
     }
 
@@ -47,7 +47,7 @@ public class EventsCollectionRepository implements EventsDAO {
     }
 
     @Override
-    public Optional<Events> findById(Integer integer) {
+    public Optional<Events> findById(String id) {
         return Optional.empty();
     }
 

@@ -1,17 +1,12 @@
 package the.bug.be_my_chef_system.data;
 
 
-import the.bug.be_my_chef_system.data.model.Chefs;
+import the.bug.be_my_chef_system.model.Chefs;
+import the.bug.be_my_chef_system.model.Events;
 
 import java.util.Collection;
 
-public interface ChefsDAO extends GenericDAO <Chefs, Integer> {
-
-    //Chefs createChef(Chefs chef);
-
-    //Collection<Chefs> findAllChefs();
-
-    //Chefs findChefsById(int chefId);
+public interface ChefsDAO extends GenericDAO <Chefs, String> {
 
     Chefs findChefsByUsername(String chefUsername);
 
@@ -21,9 +16,7 @@ public interface ChefsDAO extends GenericDAO <Chefs, Integer> {
 
     Chefs findChefsByHomeAddress(String homeAddress);
 
-    //Chefs updateChefs(Chefs chef);
+    Collection<Chefs> findChefsByEvent(Events event);
 
-    //boolean deleteChefsById(int chefId);
 
-    //void clearChefs();
 }

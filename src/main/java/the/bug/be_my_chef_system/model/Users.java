@@ -1,4 +1,4 @@
-package the.bug.be_my_chef_system.data.model;
+package the.bug.be_my_chef_system.model;
 
 
 import org.hibernate.annotations.GenericGenerator;

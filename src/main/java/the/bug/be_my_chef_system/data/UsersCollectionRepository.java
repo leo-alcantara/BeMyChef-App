@@ -1,7 +1,7 @@
 package the.bug.be_my_chef_system.data;
 
 
-import the.bug.be_my_chef_system.data.model.Users;
+import the.bug.be_my_chef_system.model.Users;
 
 import java.util.Collection;
 import java.util.Optional;
@@ -13,7 +13,7 @@ public class UsersCollectionRepository implements UsersDAO {
     }
 
     @Override
-    public boolean delete(Integer integer) {
+    public boolean delete(Users user) {
         return false;
     }
 
@@ -23,7 +23,7 @@ public class UsersCollectionRepository implements UsersDAO {
     }
 
     @Override
-    public Optional<Users> findById(Integer integer) {
+    public Optional<Users> findById(String id) {
         return Optional.empty();
     }
 

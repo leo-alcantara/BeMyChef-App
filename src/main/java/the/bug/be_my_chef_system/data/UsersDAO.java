@@ -1,17 +1,11 @@
 package the.bug.be_my_chef_system.data;
 
 
-import the.bug.be_my_chef_system.data.model.Users;
+import the.bug.be_my_chef_system.model.Users;
 
 import java.util.Collection;
 
-public interface UsersDAO extends GenericDAO <Users, Integer> {
-
-    //Users createUser(Users user);
-
-   // Collection<Users> findAllUsers();
-
-    //Users findUsersById(int userId);
+public interface UsersDAO extends GenericDAO <Users, String> {
 
     Users findUsersByUsername(String userUsername);
 
@@ -19,9 +13,5 @@ public interface UsersDAO extends GenericDAO <Users, Integer> {
 
     Collection<Users> findUsersByHomeAddress(String homeAddress);
 
-    //Users updateUsers(Users user);
 
-   // boolean deleteUsersById(int userId);
-
-    //void clearUsers();
 }
